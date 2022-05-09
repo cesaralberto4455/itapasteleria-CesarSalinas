@@ -5,70 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../main.css">
     <title>Cafetería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="../img/itafavicon.ico">
 </head>
 
 <body>
-    <header>
-        <div class="navcontainer">
-            <div class="navcontainer">
-                <a href="../index.html"><img class="logo" src="../img/LogoIta.PNG" alt="LogoIta"></a>
-            </div>
-            <div><h1>Ita Pastelería</h1></div>
-            <div class="navcontainer">
-                <h3>Pedidos: 999123999</h3>
-                
-                <a href="https://api.whatsapp.com/send?phone=999123999">
-                    <img class="logo2" src="../img/whatsapp.png" alt="LogoIta">
-                </a>
-            </div>
+    <header class="hero">
+        <div class="container">
+            <nav class="nav">
+                <a href="../pages/dulcesypostres.html" class="nav__items">Postres</a>
+                <a href="../pages/salados.html" class="nav__items">Salados</a>
+                <a href="../pages/bocaditos.html" class="nav__items">Bocaditos</a>
+                <a href="../pages/cafeteria.html" class="nav__items">Cafetería</a>
+                <a href="../index.html" class="nav__items nav__items--cta">Inicio</a>
+            </nav>
+            <section class="hero__container">
+                <div clas="hero__texts">
+                    <h1 class="hero__title">Ita Pastelería</h1>
+                    <h2 class="hero__subtitle">Cafetería</h2>
+                    <a href="https://api.whatsapp.com/send?phone=999123999" class="hero__cta">Haz tu pedido</a>
+
+                </div>
+
+            </section>
+
         </div>
 
-        <nav>
-            <ul>
-                <div class="navcontainer">
-                    <li><a href="dulcesypostres.html">Dulces y Postres</a></li>
-                    <li><a href="salados.html">Salados</a></li>
-                    <li><a href="panesyenvasados.html">Panes y Envasados</a></li>
-                    <li><a href="bocaditos.html">Bocaditos</a></li>
-                    <li><a href="packs.html">Packs</a></li>
-                    <li><a href="cafeteria.html">Cafetería</a></li>
-                </div>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <h2>Cafetería</h2>
+        <section class="presentation container">
+            <img src="../img/ImagenLogo.jpg" class="presentation__picture">
+            <h2 class="subtitle">"Cafetería"</h2>
+            <p class="presentation__copy">Porque amar es compartir el postre 🍰😍
+                Ven y disfruta un momento dulce con tu compañía favorita 😌🍧🧡</p>
+            <a href="https://api.whatsapp.com/send?phone=999123999" class="presentation__cta">Haz tu pedido</a>
+        </section>
 
-        <div class="container">
-            <div class="subcontainer">
-                <img class="imagen margin" src="../img/cafe.png" alt="Postre">
-                <img class="imagen margin" src="../img/cafe organico.png" alt="Postre">
+        <section>
+            <div class="container mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <img src="../img/cafe.png" class="card-img-top about__picturegrid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa de café</h5>
+                                <p class="card-text">Bolsa 300 gr. S/20</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <img src="../img/cafe.png" class="card-img-top about__picturegrid" alt="Pie de manzana"> 
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa de café</h5>
+                                <p class="card-text">Bolsa 500 gr. S/30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <img src="../img/cafe organico.png" class="card-img-top about__picturegrid" alt="Torta helada">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa café organico</h5>
+                                <p class="card-text">Bolsa 300 gr. S/25</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card">
+                            <img src="../img/cafe organico.png" class="card-img-top about__picturegrid" alt="Torta personalizada de Bad Bunny">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa de café orgnánico</h5>
+                                <p class="card-text">Bolsa 500 gr. S/35</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="subcontainer">
-                <img class="imagen margin" src="../img/cafe organico.png" alt="Postre">
-                <img class="imagen margin" src="../img/cafe.png" alt="Postre">
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 class="subtitle">Nuestros productos</h2>
+                <div class="projects__grid">
+
+                    <article class="projects__item">
+                        <img src="../img/img1.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Brownies</h2>
+
+                        </div>
+
+                    </article>
+
+                    <article class="projects__item">
+                        <img src="../img/img2.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Galletas con chocolate</h2>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <img src="../img/img3.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Alfajor</h2>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <img src="../img/img4.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Pie de limon</h2>
+                        </div>
+                    </article>
+
+                    <article class="projects__item">
+                        <img src="../img/img5.jpg" class="projects__img">
+                        <div class="projects__hover">
+                            <h2 class="projects__title">Tarta de maracuya</h2>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="testimony container">
+            <h2 class="subtitle">¿Qué dicen nuestros clientes?</h2>
+            <div class="testimony__grid">
+                <article class="testimony__item">
+                    <div class="testimony__person">
+                        <img src="../img/cliente.jpg" class="testimony__img">
+                        <div class="testimony__texts">
+                            <h3 class="testimony__name">Luis Paco</h3>
+                            <p class="testimony__verification">Chef Profesional</p>
+                        </div>
+                    </div>
+                    <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae
+                        officiis praesentium, hic qui ab molestias repellendus ex quibusdam repellat? At excepturi a
+                        suscipit voluptate eum sed sapiente nisi nemo.</p>
+                </article>
+                <article class="testimony__item">
+                    <div class="testimony__person">
+                        <img src="../img/cliente.jpg" class="testimony__img">
+                        <div class="testimony__texts">
+                            <h3 class="testimony__name">Luis Paco</h3>
+                            <p class="testimony__verification">Chef Profesional</p>
+                        </div>
+                    </div>
+                    <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae
+                        officiis praesentium, hic qui ab molestias repellendus ex quibusdam repellat? At excepturi a
+                        suscipit voluptate eum sed sapiente nisi nemo.</p>
+                </article>
+            </div>
+
+        </section>
     </main>
 
-    <footer>
-        <p>"Ita Pastelería" no es más que ese sentimiento que mi abuela ha querido demostrar a la familia mediante sus
-            actos y su comida, expresado en postres que se hacen con ese mismo sentimiento.</p>
+    <footer class="footer">
+        <div class="container footer__grid">
+            <nav class="nav nav--footer">
+                <a class="nav__items nav__items--footer" href="../index.html">Inicio</a>
+                <a class="nav__items nav__items--footer" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav__items nav__items--footer"
+                    href="https://www.google.com/maps/place/11%C2%B059'58.1%22S+77%C2%B000'51.3%22W/@-11.9994115,-77.0146679,19.5z/data=!4m5!3m4!1s0x0:0x4338ad633b1035b4!8m2!3d-11.9994635!4d-77.0142607?hl=es">Ubicanos</a>
+            </nav>
+            <section class="footer__contact">
+                <h3 class="footer__title">Contactanos</h3>
+                <div class="footer__icons">
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-facebook-square footer__icon"
+                            href="https://www.facebook.com/search/top?q=ita%20pasteleria"></a>
 
-        <ul>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="recomendaciones.html">Recomendaciones</a></li>
-        </ul>
+                    </span>
 
-        <a href="https://www.facebook.com/Ita-Pasteleria-103566081586419" target="_blank"><img src="../img/LogoFace.PNG"
-                alt="Facebook"></a>
-        <a href="https://www.instagram.com/itapasteleria.pe/" target="_blank"><img src="../img/LogoInsta.PNG"
-                alt="Instagram"></a>
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-instagram-square footer__icon"
+                            href="https://www.instagram.com/itapasteleria.pe/"></a>
+
+                    </span>
+
+                    <span class="footer__container-icons">
+                        <a class="fa-brands fa-whatsapp-square footer__icon"
+                            href="https://api.whatsapp.com/send?phone=999123999"></a>
+
+                    </span>
+
+                </div>
+            </section>
+
+        </div>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39d51274a7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
