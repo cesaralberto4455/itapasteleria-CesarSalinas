@@ -1,0 +1,23 @@
+@import "variables";
+@import "base";
+@import "header";
+@import "grillaBootstrap";
+@import "main1";
+@import "footer";
+@import "responsive";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color:$color-primary;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
