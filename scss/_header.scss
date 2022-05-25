@@ -71,3 +71,12 @@
     text-decoration: none;
     border-radius: 40px;
 }
+
+div{
+    nav{
+        a{
+            @include btn($background-color: $terciary-color,
+            $color: $secondary-color, $bold: 'true');
+        }
+    }
+}

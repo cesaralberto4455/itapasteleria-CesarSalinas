@@ -2,3 +2,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+*{
+    @include reset-pm();
+    box-sizing: border-box;
+}

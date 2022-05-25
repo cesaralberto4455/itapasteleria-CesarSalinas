@@ -2,3 +2,36 @@ $backgroud:linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
 $color-primary: #800000;
 $color-secondary: #cd6345;
 $boton-padding: 20px 40px;
+
+$primary-color: #ffe92e;
+$secondary-color: #540303;
+$terciary-color: rgb(140, 72, 5);
+$font-color: #aaa;
+
+$limit: 10;
+$unit: 8px;
+
+@function size($value){
+    @return $value * $unit;
+}
+
+@mixin reset-pm{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin btn($background-color,$color,$bold){
+    background-color: $background-color;
+    color: $color;
+    border-radius: 50px;
+    padding: 20px 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @if($bold == 'true'){
+        font-weight: bolder;
+    }
+}
+
