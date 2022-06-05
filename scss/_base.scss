@@ -6,3 +6,7 @@ body{
     @include reset-pm();
     box-sizing: border-box;
 }
+
+a:hover {
+    color: $color-secondary;
+}

@@ -7,6 +7,9 @@ body {
   margin: 0;
   box-sizing: border-box; }
 
+a:hover {
+  color: #cd6345; }
+
 .hero {
   height: 100vh;
   background-image: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%), url("../img/piepanzana.jpg");
@@ -83,7 +86,8 @@ div nav a {
 /* Grilla Bootstrap */
 .card {
   border: 0 !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  align-items: center; }
 
 .about__picturegrid {
   width: 280px;
